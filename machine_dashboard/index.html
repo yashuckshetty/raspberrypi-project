@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Monitoring Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Industrial Machine Monitoring Dashboard</h1>
+        <p>Real-Time Runtime, Idle Time & Utilization</p>
+    </header>
+
+    <div class="chart-grid">
+
+        <div class="chart-box">
+            <h3>Running Time (seconds)</h3>
+            <canvas id="runChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Idle Time (seconds)</h3>
+            <canvas id="idleChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Utilization (%)</h3>
+            <canvas id="utilChart"></canvas>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>IoT Based Industrial Machine Utilization System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
